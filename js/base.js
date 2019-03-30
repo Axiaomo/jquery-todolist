@@ -37,14 +37,14 @@
     var $task_list = $(".task-list");
     for (var i = 0; i < task_list.length; i++) {
       var $task = render_task_tpl(task_list[i])
-      $task_list.append($task_list)
+      $task_list.append($task)
     }
   }
 
   function render_task_tpl(data) {
     var list_item_tpl =
       '<div class="task-item">' +
-      '<span> < input type = "checkbox" / > </span>' +
+      '<span> <input type = "checkbox"/> </span>' +
       '<span class="task-content">' + data.content + '</span> ' +
       '<span>删除</span> ' +
       '<span>详细</span>' +
