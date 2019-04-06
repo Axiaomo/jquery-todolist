@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css" />
-  <link rel="stylesheet" href="css/base.css" />
-</head>
-
-<body>
-  <!-- 总容器开始 -->
-  <div class="container">
-    <h1>我的Todo</h1>
-    <form class="add-task">
-      <input type="text" name="content" placeholder="e.g. 下午记得买菜" />
-      <button type="submit">submit</button>
-    </form>
-    <!-- 清单列表开始 -->
-    <div class="task-list">
-      <div class="task-item">
-        <span><input type="checkbox" /></span>
-        <span>item content 1</span>
-        <span>delete</span>
-        <span>detail</span>
-      </div>
-    </div>
-    <!-- 清单列表结束 -->
-    <div class="task-detail-mask"></div>
-    <!-- 任务详情开始 -->
-    <div class="task-detail">
-      <!-- 任务标题开始 -->
-      <div class="content">下午记得买菜</div>
-      <div>
-        <!-- 任务描述开始 -->
-        <div class="desc">
-          <textarea></textarea>
+  <body>
+    <!-- 总容器开始 -->
+    <div class="container">
+      <h1>我的Todo</h1>
+      <form class="add-task">
+        <input
+          type="text"
+          name="content"
+          autofocus
+          autocomplete="off"
+          placeholder="e.g. 下午记得买菜"
+        />
+        <button type="submit">submit</button>
+      </form>
+      <!-- 清单列表开始 -->
+      <div class="task-list"></div>
+      <!-- 清单列表结束 -->
+      <div class="task-detail-mask"></div>
+      <!-- 任务详情开始 -->
+      <div class="task-detail">
+        <!-- 任务标题开始 -->
+        <div class="content">下午记得买菜</div>
+        <div>
+          <!-- 任务描述开始 -->
+          <div class="desc">
+            <textarea></textarea>
+          </div>
+        </div>
+        <div class="remind">
+          <!-- 任务定时开始提醒 -->
+          <input type="date" />
+          <button type="submit">submit</button>
+          <!-- 任务定时结束提醒 -->
         </div>
       </div>
-      <div class="remind">
-        <!-- 任务定时开始提醒 -->
-        <input type="date" />
-        <button type="submit">submit</button>
-        <!-- 任务定时结束提醒 -->
-      </div>
+      <!-- 任务详情结束 -->
     </div>
-    <!-- 任务详情结束 -->
-  </div>
-  <!-- 总容器结束 -->
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/store/dist/store.everything.min.js"></script>
-  <script src="./js/base.js"></script>
-</body>
-
+    <!-- 总容器结束 -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/store/dist/store.everything.min.js"></script>
+    <script src="./js/base.js"></script>
+  </body>
 </html>
